@@ -1,0 +1,33 @@
+# 编译生成的文件
+phprun
+src/*.o
+
+# 编译器生成的临时文件
+*.d
+*.a
+*.out
+*.exe
+
+# 调试文件
+*.gdb
+*.dbg
+
+# 临时文件
+*.swp
+*.swo
+*~
+
+# macOS 特有的系统文件
+.DS_Store
+
+# Linux 特有的系统文件
+*.so
+
+# Windows 特有的系统文件
+Thumbs.db
+ehthumbs.db
+
+# 其他开发工具生成的文件
+.idea/
+.vscode/
+*.log
