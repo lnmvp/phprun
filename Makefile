@@ -1,13 +1,16 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -std=c99
-SRC = src/phprun.c src/lexer.c
+CFLAGS = -Wall -g
+SRC = src/phprun.c src/lexer.c src/parser.c
 OBJ = $(SRC:.c=.o)
 TARGET = phprun
 
 all: $(TARGET)
 
-$(TARGET): $(SRC)
-	$(CC) $(CFLAGS) -o $(TARGET) $(SRC)
+$(TARGET): $(OBJ)
+	$(CC) $(CFLAGS) -o $(TARGET) $(OBJ)
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(TARGET) $(OBJ)
+	rm -f $(OBJ) $(TARGET)

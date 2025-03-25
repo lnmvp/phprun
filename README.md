@@ -8,9 +8,9 @@ LNMVP 是一个从零开始构建的轻量级 LNMP（Linux, Nginx, MySQL, PHP）
 
 `phprun` 是一个用 C 语言编写的最小 PHP 解释器，目标是解析并执行最基础的 PHP 代码。
 
-✅ 能执行最基本的 PHP 代码
-✅ 处理变量、数学运算、字符串操作
-✅ 能嵌入 nginxrun 解析 PHP 文件
+- ✅ 能执行最基本的 PHP 代码
+- ✅ 处理变量、数学运算、字符串操作
+- ✅ 能嵌入 nginxrun 解析 PHP 文件
 
 ## 如何编译和运行 🖥️
 
